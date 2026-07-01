@@ -318,6 +318,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## ✉️ Contact
 **Author:** Akshansh Vijay  
-**LinkedIn:** [LinkedIn Profile Placeholder](#)  
-**GitHub:** [GitHub Profile Placeholder](#)  
-**Email:** [Email Placeholder](#)
+**LinkedIn:** [Akshansh Vijay](https://www.linkedin.com/in/akshansh-vijay/)  
+**GitHub:** [akshanshvj](https://github.com/akshanshvj)  
+**Email:** [akshanshvj4803@gmail.com](mailto:akshanshvj4803@gmail.com)
+
