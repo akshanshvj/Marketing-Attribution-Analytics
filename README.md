@@ -15,17 +15,17 @@ An enterprise-grade marketing analytics and business intelligence solution. This
 
 ```mermaid
 graph TD
-    A[Raw CSV Files: Nykaa, Purplle, Tira] --> B[Python Data Cleaning: Deduplication, Format Checking]
-    B --> C[Feature Engineering: Date Parsing, Source Tracking]
-    C --> D[PostgreSQL Warehouse: table marketing_campaigns]
-    D --> E[Views: vw_brand_summary, vw_channel_summary, vw_monthly_summary]
-    D --> F[Functions: get_top_campaigns, get_brand_revenue, get_monthly_revenue]
-    D --> G[Triggers: trg_marketing_kpis - Automated KPI calculations]
-    E --> H[SQL Analysis: Advanced Window-Rank, Correlation, Growth Rates]
+    A["Raw CSV Files: Nykaa, Purplle, Tira"] --> B["Python Data Cleaning: Deduplication, Format Checking"]
+    B --> C["Feature Engineering: Date Parsing, Source Tracking"]
+    C --> D["PostgreSQL Warehouse: table marketing_campaigns"]
+    D --> E["Views: vw_brand_summary, vw_channel_summary, vw_monthly_summary"]
+    D --> F["Functions: get_top_campaigns, get_brand_revenue, get_monthly_revenue"]
+    D --> G["Triggers: trg_marketing_kpis - Automated KPI calculations"]
+    E --> H["SQL Analysis: Advanced Window-Rank, Correlation, Growth Rates"]
     F --> H
     G --> H
-    H --> I[Power BI Dashboard: Interactive Reporting & Visualizations]
-    I --> J[Business Insights: Portfolio, Channel, Budget & Demographic Decisions]
+    H --> I["Power BI Dashboard: Interactive Reporting & Visualizations"]
+    I --> J["Business Insights: Portfolio, Channel, Budget & Demographic Decisions"]
 ```
 
 ---
