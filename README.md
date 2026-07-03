@@ -133,6 +133,31 @@ The project is structured into three primary analytical layers:
     *   [MARKETING ANALYTICS FRAMEWORK, ATTRIBUTION METHODOLOGY & BUSINESS JUSTIFICATION.pdf](report/MARKETING%20ANALYTICS%20FRAMEWORK,%20ATTRIBUTION%20METHODOLOGY%20&%20BUSINESS%20JUSTIFICATION.pdf) - 25-page comprehensive business documentation detailing the core framework.
     *   [ATTRIBUTION_MODELING_&_FINANCIAL_KPI_SUPPLEMENT.md](report/ATTRIBUTION_MODELING_&_FINANCIAL_KPI_SUPPLEMENT.md) - Business appendix detailing the corrected financial formulas, DAX measures, and multi-touch attribution comparisons (First Touch, Last Touch, Linear, Time-Decay, U-Shaped).
 
+### 6. Marketing Attribution Simulation Results (Python)
+*   **Location:** [`python/`](python/)
+*   **Details:** We simulated First-Touch, Last-Touch, Linear, Time-Decay, and U-Shaped attribution weights in [06_Attribution_Modeling.ipynb](python/06_Attribution_Modeling.ipynb) to compare channel performance. Visual results:
+    
+    <details>
+    <summary>📈 1. Attributed Revenue Comparison</summary>
+    <br>
+    
+    ![Attributed Revenue](images/attribution_revenue_comparison.png)
+    </details>
+
+    <details>
+    <summary>🎯 2. Attributed ROAS Comparison</summary>
+    <br>
+    
+    ![Attributed ROAS](images/attribution_roas_comparison.png)
+    </details>
+
+    <details>
+    <summary>💰 3. Attributed CAC Comparison</summary>
+    <br>
+    
+    ![Attributed CAC](images/attribution_cac_comparison.png)
+    </details>
+
 ---
 
 ## ⚡ Skills Demonstrated
