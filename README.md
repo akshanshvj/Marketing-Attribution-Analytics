@@ -98,45 +98,30 @@ The project is structured into three primary analytical layers:
 *   **File:** [Marketing-Attribution-ROI-Analytics.pbix](dashboard/Marketing-Attribution-ROI-Analytics.pbix)
 *   **Details:** Built using Microsoft Power BI Desktop, implementing a clean star-schema model, custom DAX metrics, and responsive visual layout. It contains five key reports:
     
-    <details>
-    <summary>📊 1. Executive Overview</summary>
-    <br>
-    Provides high-level KPIs (Total Revenue, Average ROI, CPA, CTR) and maps performance over time, by brand, and by customer segment.
-    
-    ![Executive Overview](images/01_Executive_Overview.jpg)
-    </details>
+#### 📊 1. Executive Overview
+Provides high-level KPIs (Total Revenue, Average ROI, CPA, CTR) and maps performance over time, by brand, and by customer segment.
 
-    <details>
-    <summary>🏢 2. Brand & Channel Analytics</summary>
-    <br>
-    Drills down into brand portfolio comparison (Nykaa, Purplle, Tira) and marketing channel performance (Email, Paid Ads, Social Media, etc.) with detailed matrices.
-    
-    ![Brand & Channel Analytics](images/02_Brand_Channel_Analytics.jpg)
-    </details>
+![Executive Overview](images/01_Executive_Overview.jpg)
 
-    <details>
-    <summary>🎯 3. Customer Journey & Campaign Effectiveness</summary>
-    <br>
-    Visualizes the marketing funnel conversion rates (Impressions -> Clicks -> Leads -> Conversions) along with performance by language and target audience segment.
-    
-    ![Customer Journey & Campaign Effectiveness](images/03_Customer_Journey_Campaign_Effectiveness.jpg)
-    </details>
+#### 🏢 2. Brand & Channel Analytics
+Drills down into brand portfolio comparison (Nykaa, Purplle, Tira) and marketing channel performance (Email, Paid Ads, Social Media, etc.) with detailed matrices.
 
-    <details>
-    <summary>💰 4. Financial Performance & Profitability Analysis</summary>
-    <br>
-    A deep-dive financial dashboard displaying profit trends, CPL, CPA vs. CPC metrics, and campaign ROI tracking.
-    
-    ![Financial Performance & Profitability Analysis](images/04_Financial_Performance_Profitability.jpg)
-    </details>
+![Brand & Channel Analytics](images/02_Brand_Channel_Analytics.jpg)
 
-    <details>
-    <summary>💡 5. Strategic Insights & Recommendations</summary>
-    <br>
-    Summarizes key business findings and lists automated strategic recommendations mapped to budget optimization, customer focus, and future growth strategy.
-    
-    ![Strategic Insights & Recommendations](images/05_Strategic_Insights_Recommendations.jpg)
-    </details>
+#### 🎯 3. Customer Journey & Campaign Effectiveness
+Visualizes the marketing funnel conversion rates (Impressions -> Clicks -> Leads -> Conversions) along with performance by language and target audience segment.
+
+![Customer Journey & Campaign Effectiveness](images/03_Customer_Journey_Campaign_Effectiveness.jpg)
+
+#### 💰 4. Financial Performance & Profitability Analysis
+A deep-dive financial dashboard displaying profit trends, CPL, CPA vs. CPC metrics, and campaign ROI tracking.
+
+![Financial Performance & Profitability Analysis](images/04_Financial_Performance_Profitability.jpg)
+
+#### 💡 5. Strategic Insights & Recommendations
+Summarizes key business findings and lists automated strategic recommendations mapped to budget optimization, customer focus, and future growth strategy.
+
+![Strategic Insights & Recommendations](images/05_Strategic_Insights_Recommendations.jpg)
 
 ### 5. Analytical Framework & Business Report
 *   **Location:** [`report/`](report/)
@@ -148,26 +133,14 @@ The project is structured into three primary analytical layers:
 *   **Location:** [`python/`](python/)
 *   **Details:** We simulated First-Touch, Last-Touch, Linear, Time-Decay, and U-Shaped attribution weights in [06_Attribution_Modeling.ipynb](python/06_Attribution_Modeling.ipynb) to compare channel performance. Visual results:
     
-    <details>
-    <summary>📈 1. Attributed Revenue Comparison</summary>
-    <br>
-    
-    ![Attributed Revenue](images/attribution_revenue_comparison.png)
-    </details>
+#### 📈 1. Attributed Revenue Comparison
+![Attributed Revenue](images/attribution_revenue_comparison.png)
 
-    <details>
-    <summary>🎯 2. Attributed ROAS Comparison</summary>
-    <br>
-    
-    ![Attributed ROAS](images/attribution_roas_comparison.png)
-    </details>
+#### 🎯 2. Attributed ROAS Comparison
+![Attributed ROAS](images/attribution_roas_comparison.png)
 
-    <details>
-    <summary>💰 3. Attributed CAC Comparison</summary>
-    <br>
-    
-    ![Attributed CAC](images/attribution_cac_comparison.png)
-    </details>
+#### 💰 3. Attributed CAC Comparison
+![Attributed CAC](images/attribution_cac_comparison.png)
 
 ---
 
