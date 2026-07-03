@@ -11,6 +11,17 @@ An enterprise-grade marketing analytics and business intelligence solution. This
 
 ---
 
+## 📊 Project Statistics
+*   **166,665** Campaign Records
+*   **3** Indian Beauty Brands (Nykaa, Purplle, Tira)
+*   **156** Unique Marketing Channel Configurations
+*   **5** Simulated Attribution Models
+*   **37** Analytical SQL Queries
+*   **5** Interactive Power BI Pages
+*   **PostgreSQL + Python + Power BI** End-to-End Pipeline
+
+---
+
 ## 🏗️ End-to-End System Architecture
 
 ```mermaid
@@ -170,7 +181,7 @@ The project is structured into three primary analytical layers:
 ---
 
 ## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](#) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
