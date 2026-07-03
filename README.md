@@ -92,7 +92,7 @@ The project is structured into three primary analytical layers:
     <br>
     Provides high-level KPIs (Total Revenue, Average ROI, CPA, CTR) and maps performance over time, by brand, and by customer segment.
     
-    ![Executive Overview](images/01_Executive_Overview.png)
+    ![Executive Overview](images/01_Executive_Overview.jpg)
     </details>
 
     <details>
@@ -100,7 +100,7 @@ The project is structured into three primary analytical layers:
     <br>
     Drills down into brand portfolio comparison (Nykaa, Purplle, Tira) and marketing channel performance (Email, Paid Ads, Social Media, etc.) with detailed matrices.
     
-    ![Brand & Channel Analytics](images/02_Brand_Channel_Analytics.png)
+    ![Brand & Channel Analytics](images/02_Brand_Channel_Analytics.jpg)
     </details>
 
     <details>
@@ -108,7 +108,7 @@ The project is structured into three primary analytical layers:
     <br>
     Visualizes the marketing funnel conversion rates (Impressions -> Clicks -> Leads -> Conversions) along with performance by language and target audience segment.
     
-    ![Customer Journey & Campaign Effectiveness](images/03_Customer_Journey_Campaign_Effectiveness.png)
+    ![Customer Journey & Campaign Effectiveness](images/03_Customer_Journey_Campaign_Effectiveness.jpg)
     </details>
 
     <details>
@@ -116,7 +116,7 @@ The project is structured into three primary analytical layers:
     <br>
     A deep-dive financial dashboard displaying profit trends, CPL, CPA vs. CPC metrics, and campaign ROI tracking.
     
-    ![Financial Performance & Profitability Analysis](images/04_Financial_Performance_Profitability.png)
+    ![Financial Performance & Profitability Analysis](images/04_Financial_Performance_Profitability.jpg)
     </details>
 
     <details>
@@ -124,7 +124,7 @@ The project is structured into three primary analytical layers:
     <br>
     Summarizes key business findings and lists automated strategic recommendations mapped to budget optimization, customer focus, and future growth strategy.
     
-    ![Strategic Insights & Recommendations](images/05_Strategic_Insights_Recommendations.png)
+    ![Strategic Insights & Recommendations](images/05_Strategic_Insights_Recommendations.jpg)
     </details>
 
 ### 5. Analytical Framework & Business Report
