@@ -16,7 +16,7 @@ FROM marketing_campaigns;
 
 -- Query 2: Total Acquisition Cost
 -- Purpose: Evaluates the total marketing acquisition spend across all campaigns.
-SELECT SUM(acquisition_cost) AS total_acquisition_cost 
+SELECT SUM(acquisition_cost * conversions) AS total_acquisition_cost 
 FROM marketing_campaigns;
 
 -- Query 3: Total Clicks
@@ -217,7 +217,7 @@ SELECT customer_segment,
        SUM(conversions) AS total_conversions,
        AVG(ctr) AS average_ctr,
        AVG(roi) AS average_roi,
-       SUM(acquisition_cost) AS total_acquisition_cost
+       SUM(acquisition_cost * conversions) AS total_acquisition_cost
 FROM marketing_campaigns
 GROUP BY customer_segment
 ORDER BY total_revenue DESC;

@@ -30,6 +30,27 @@ graph TD
 
 ---
 
+## 🚀 Key Features
+*   **Enterprise PostgreSQL Data Warehouse:** Safe DDL schema initialization with data integrity constraints, column-level metadata, and index optimizations.
+*   **Automated KPI Trigger Pipeline:** PL/pgSQL database triggers to automatically compute CTR, Conversion Rate, CPC, CPL, and CPA on inserts/updates.
+*   **37 Advanced SQL Analytics Queries:** Catalog of parametric business reports, growth mapping, and window-ranking queries.
+*   **5-Page Interactive Power BI Dashboard:** Clean star-schema model with corrected financial logic, dynamic slicers, and performance analysis.
+*   **Multi-Touch Attribution Simulation:** Python ETL scripts comparing First Touch, Last Touch, Linear, Time-Decay, and U-Shaped weights.
+*   **Financial KPI Framework:** Balanced portfolio analysis using true marketing spend to calculate ROI, ROAS, CPA, CPC, and CPL.
+*   **Exploratory Data Science Notebooks:** Python profiling, brand summaries, and seasonality analyses.
+
+---
+
+## 📈 Business Value
+This analytics framework enables organizations to:
+*   **Optimize Marketing Budget Allocation:** Identify underperforming campaign formats and shift spend toward high-ROAS channels.
+*   **Evaluate Brand Portfolio Performance:** Contrast campaign effectiveness across Nykaa, Purplle, and Tira portfolios.
+*   **Simulate Attribution Strategy Shifts:** Assess how channel credit shifts when moving from traditional Last-Touch to multi-touch linear or time-decay models.
+*   **Analyze Customer Cohorts:** Profile demographic responses (e.g. college students, youth) to localize marketing efforts.
+*   **Maintain Financial KPI Control:** Track accurate cost efficiency (CPC, CPL, CPA) and ROI at the individual channel level.
+
+---
+
 ## 📂 Project Navigation
 
 The project is structured into three primary analytical layers:
@@ -52,7 +73,7 @@ The project is structured into three primary analytical layers:
     *   [views.sql](sql/views.sql) - Business intelligence views.
     *   [functions.sql](sql/functions.sql) - Parametric reporting functions.
     *   [triggers.sql](sql/triggers.sql) - Automated KPI computation trigger.
-    *   [analysis_queries.sql](sql/analysis_queries.sql) - Catalog of 47 SQL reporting queries.
+    *   [analysis_queries.sql](sql/analysis_queries.sql) - Catalog of 37 SQL reporting queries.
     *   Refer to [README_SQL.md](sql/README_SQL.md) for detailed database documentation.
 
 ### 3. Business Intelligence & Star Schema
@@ -61,13 +82,65 @@ The project is structured into three primary analytical layers:
     *   Features the central `fact_marketing_campaigns.csv` and six dimension tables (`dim_brand.csv`, `dim_channel.csv`, `dim_campaign_type.csv`, `dim_customer_segment.csv`, `dim_language.csv`, `dim_date.csv`) generated with integer surrogate keys.
     *   Refer to [README_STAR_SCHEMA.md](data/star_schema/README_STAR_SCHEMA.md) for the entity relationship model and descriptions.
 
+### 4. Interactive Power BI Dashboard
+*   **Location:** [`dashboard/`](dashboard/)
+*   **File:** [Marketing-Attribution-ROI-Analytics.pbix](dashboard/Marketing-Attribution-ROI-Analytics.pbix)
+*   **Details:** Built using Microsoft Power BI Desktop, implementing a clean star-schema model, custom DAX metrics, and responsive visual layout. It contains five key reports:
+    
+    <details>
+    <summary>📊 1. Executive Overview</summary>
+    <br>
+    Provides high-level KPIs (Total Revenue, Average ROI, CPA, CTR) and maps performance over time, by brand, and by customer segment.
+    
+    ![Executive Overview](images/01_Executive_Overview.png)
+    </details>
+
+    <details>
+    <summary>🏢 2. Brand & Channel Analytics</summary>
+    <br>
+    Drills down into brand portfolio comparison (Nykaa, Purplle, Tira) and marketing channel performance (Email, Paid Ads, Social Media, etc.) with detailed matrices.
+    
+    ![Brand & Channel Analytics](images/02_Brand_Channel_Analytics.png)
+    </details>
+
+    <details>
+    <summary>🎯 3. Customer Journey & Campaign Effectiveness</summary>
+    <br>
+    Visualizes the marketing funnel conversion rates (Impressions -> Clicks -> Leads -> Conversions) along with performance by language and target audience segment.
+    
+    ![Customer Journey & Campaign Effectiveness](images/03_Customer_Journey_Campaign_Effectiveness.png)
+    </details>
+
+    <details>
+    <summary>💰 4. Financial Performance & Profitability Analysis</summary>
+    <br>
+    A deep-dive financial dashboard displaying profit trends, CPL, CPA vs. CPC metrics, and campaign ROI tracking.
+    
+    ![Financial Performance & Profitability Analysis](images/04_Financial_Performance_Profitability.png)
+    </details>
+
+    <details>
+    <summary>💡 5. Strategic Insights & Recommendations</summary>
+    <br>
+    Summarizes key business findings and lists automated strategic recommendations mapped to budget optimization, customer focus, and future growth strategy.
+    
+    ![Strategic Insights & Recommendations](images/05_Strategic_Insights_Recommendations.png)
+    </details>
+
+### 5. Analytical Framework & Business Report
+*   **Location:** [`report/`](report/)
+*   **Files:** 
+    *   [MARKETING ANALYTICS FRAMEWORK, ATTRIBUTION METHODOLOGY & BUSINESS JUSTIFICATION.pdf](report/MARKETING%20ANALYTICS%20FRAMEWORK,%20ATTRIBUTION%20METHODOLOGY%20&%20BUSINESS%20JUSTIFICATION.pdf) - 25-page comprehensive business documentation detailing the core framework.
+    *   [ATTRIBUTION_MODELING_&_FINANCIAL_KPI_SUPPLEMENT.md](report/ATTRIBUTION_MODELING_&_FINANCIAL_KPI_SUPPLEMENT.md) - Business appendix detailing the corrected financial formulas, DAX measures, and multi-touch attribution comparisons (First Touch, Last Touch, Linear, Time-Decay, U-Shaped).
+
 ---
 
 ## ⚡ Skills Demonstrated
 *   **Data Pipelines:** ETL, data ingestion, cleaning, and concatenation in Pandas.
 *   **SQL Architecture:** DDL schema design, PL/pgSQL database triggers, stored procedures, indexing optimizations, and query compilation.
-*   **Business Intelligence:** Star schema design, dimensional modeling, DAX measurements, and interactive layout mockups.
-*   **Advanced Analytics:** Statistical correlation, outlier detection, seasonality mapping, and cohort analysis.
+*   **Business Intelligence & DAX:** Star schema design, dimensional modeling, custom DAX metrics, and interactive dashboard mockups.
+*   **Marketing Attribution Modeling:** Design, simulation, and comparison of First Touch, Last Touch, Linear, Time-Decay, and U-Shaped (position-based) attribution methodologies.
+*   **Advanced Analytics:** ROAS calculations, CAC/CPA financial mapping, Customer Lifetime Value (CLV) baseline estimation, statistical correlation, and cohort analysis.
 
 ---
 

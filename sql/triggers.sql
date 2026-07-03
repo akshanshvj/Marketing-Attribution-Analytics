@@ -23,7 +23,7 @@ BEGIN
     -- 2. Conversion Rate & Cost Per Click (CPC)
     IF NEW.clicks > 0 THEN
         NEW.conversion_rate := (NEW.conversions::DECIMAL / NEW.clicks) * 100.0;
-        NEW.cpc := NEW.acquisition_cost / NEW.clicks;
+        NEW.cpc := (NEW.acquisition_cost * NEW.conversions) / NEW.clicks;
     ELSE
         NEW.conversion_rate := 0.000000;
         NEW.cpc := 0.000000;
@@ -31,14 +31,14 @@ BEGIN
 
     -- 3. Cost Per Lead (CPL)
     IF NEW.leads > 0 THEN
-        NEW.cpl := NEW.acquisition_cost / NEW.leads;
+        NEW.cpl := (NEW.acquisition_cost * NEW.conversions) / NEW.leads;
     ELSE
         NEW.cpl := 0.000000;
     END IF;
 
     -- 4. Cost Per Acquisition (CPA) & Revenue Per Conversion
     IF NEW.conversions > 0 THEN
-        NEW.cpa := NEW.acquisition_cost / NEW.conversions;
+        NEW.cpa := NEW.acquisition_cost;
         NEW.revenue_per_conversion := NEW.revenue / NEW.conversions;
     ELSE
         NEW.cpa := 0.000000;

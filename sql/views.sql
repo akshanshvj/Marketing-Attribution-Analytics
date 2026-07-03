@@ -16,7 +16,7 @@ SELECT brand,
        AVG(ctr) AS average_ctr,
        AVG(cpa) AS average_cpa,
        AVG(conversion_rate) AS average_conversion_rate,
-       SUM(acquisition_cost) AS total_acquisition_cost
+       SUM(acquisition_cost * conversions) AS total_acquisition_cost
 FROM marketing_campaigns
 GROUP BY brand;
 
